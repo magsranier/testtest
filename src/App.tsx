@@ -10,7 +10,9 @@ const App = () => {
     // Fallback for when Telegram Web App SDK is not available
     // window.open("https://github.com/", "_blank");
 
-    window.location.href = `intent://github.com#Intent;scheme=https;end`;
+    setTimeout(() => {
+      window.location.href = `intent://github.com#Intent;scheme=https;end`;
+    }, 500);
     // }
     alert("TEST");
   };
