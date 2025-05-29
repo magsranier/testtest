@@ -6,12 +6,12 @@ const Home = () => {
     const platform = tgApp.platform;
 
     if (platform.toLowerCase() === "android") {
-      tgApp.openLink("https://github.com/");
-    } else {
       tgApp.openLink(
         `https://b2fd-96-0-144-237.ngrok-free.app/telegram/webhook/casino_plus/newTab?redirect_url=` +
           encodeURIComponent("https://github.com/")
       );
+    } else {
+      tgApp.openLink("https://github.com/");
     }
   };
 
