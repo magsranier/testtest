@@ -8,7 +8,9 @@ const App = () => {
 
   return (
     <div>
-      <button onClick={btnClicked}>TEST 2</button>
+      <button style={{ backgroundColor: "red" }} onClick={btnClicked}>
+        TEST 2
+      </button>
     </div>
   );
 };
