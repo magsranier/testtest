@@ -5,7 +5,7 @@ const App = () => {
     const tgApp = window?.Telegram?.WebApp;
     // if (tgApp) {
     // Add { tryBrowser: true } to the openLink options
-    tgApp.openLink("https://github.com/", { tryBrowser: false });
+    tgApp.openLink("intent://github.com/#Intent;scheme=https;end");
     // } else {
     // Fallback for when Telegram Web App SDK is not available
     // window.open("https://github.com/", "_blank");
