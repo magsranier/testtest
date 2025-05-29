@@ -7,7 +7,7 @@ const App = () => {
 
   return (
     <div>
-      <button onClick={btnClicked}>asd</button>
+      <button onClick={btnClicked}>TEST</button>
     </div>
   );
 };
