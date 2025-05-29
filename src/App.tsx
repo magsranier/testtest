@@ -1,13 +1,14 @@
 const App = () => {
   const btnClicked = () => {
-    if (window?.Telegram === null) return;
     const tgApp = window?.Telegram?.WebApp;
     tgApp.openLink("google.com");
+
+    alert("TEST");
   };
 
   return (
     <div>
-      <button onClick={btnClicked}>TEST</button>
+      <button onClick={btnClicked}>TEST 2</button>
     </div>
   );
 };
