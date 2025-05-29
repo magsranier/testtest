@@ -1,26 +1,15 @@
-import "./index.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./Home";
+import Test from "./Test";
 
 const App = () => {
-  const btnClicked = () => {
-    const tgApp = window?.Telegram?.WebApp;
-    // if (tgApp) {
-    // Add { tryBrowser: true } to the openLink options
-    tgApp.openLink("https://github.com/");
-    // } else {
-    // Fallback for when Telegram Web App SDK is not available
-    // window.open("https://github.com/", "_blank");
-
-    // setTimeout(() => {
-    //   window.location.href = `intent://github.com#Intent;scheme=https;end`;
-    // }, 500);
-    // }
-    alert("TEST");
-  };
-
   return (
-    <div>
-      <button onClick={btnClicked}>GITHUB LINK</button>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/test" element={<Test />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
