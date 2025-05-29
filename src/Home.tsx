@@ -7,7 +7,7 @@ const Home = () => {
 
     if (platform.toLowerCase() === "android") {
       tgApp.openLink(
-        `https://b2fd-96-0-144-237.ngrok-free.app/telegram/webhook/casino_plus/newTab?redirect_url=` +
+        `https://testtest-git-main-magsraniers-projects.vercel.app/test/?redirect_url=` +
           encodeURIComponent(
             "https://testtest-git-main-magsraniers-projects.vercel.app/"
           )
