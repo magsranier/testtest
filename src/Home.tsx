@@ -34,8 +34,6 @@ const Home = () => {
       <button className="github" onClick={btnClicked}>
         GITHUB LINK
       </button>
-
-      <button className="gcash">GCASH TEST</button>
     </div>
   );
 };
