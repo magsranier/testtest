@@ -11,9 +11,9 @@ const Gcash = () => {
 
     if (platform.toLowerCase() === "android") {
       tgApp.openLink(
-        `https://testtest-git-main-magsraniers-projects.vercel.app/?redirect_url=` +
+        `https://testtest-git-main-magsraniers-projects.vercel.app/gcash/?redirect_url=` +
           encodeURIComponent(
-            "https://testtest-git-main-magsraniers-projects.vercel.app/"
+            "https://testtest-git-main-magsraniers-projects.vercel.app/gcash/"
           )
       );
     } else {
