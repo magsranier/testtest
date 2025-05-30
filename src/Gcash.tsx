@@ -2,7 +2,7 @@ import "./index.css";
 import { useSearchParams } from "react-router-dom";
 import { useEffect } from "react";
 
-const Home = () => {
+const Gcash = () => {
   const [searchParams] = useSearchParams();
 
   const btnClicked = () => {
@@ -25,19 +25,17 @@ const Home = () => {
     const redirect_url = searchParams.get("redirect_url");
 
     if (redirect_url) {
-      window.location.href = `intent://github.com#Intent;scheme=https;end`;
+      window.location.href = `intent://uat.m.gcash.com/gcash-cashier-web/1.2.1/index.html/#Intent;scheme=https;end`;
     }
   }, [searchParams]);
 
   return (
     <div>
-      <button className="github" onClick={btnClicked}>
-        GITHUB LINK
+      <button onClick={btnClicked} className="gcash">
+        GCASH TEST
       </button>
-
-      <button className="gcash">GCASH TEST</button>
     </div>
   );
 };
 
-export default Home;
+export default Gcash;

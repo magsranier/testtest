@@ -8,9 +8,16 @@ div {
   button {
     padding: 4px 8px;
     color: white;
-    background-color: orange;
     border: none;
     border-radius: 4px;
     height: 32px;
+  }
+
+  .github {
+    background-color: black;
+  }
+
+  .gcash {
+    background-color: blue;
   }
 }
